@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA  MEDIA QUERIES</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: grey;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: blue;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+
+            }
+        }
+
+        .column {
+            float: right;
+            width: 25%;
+            padding: 20px;  
+        }
+
+        /* opcional */
+
+        .row::after {
+            clear: both;
+
+        }
+
+        @media screen and (max-width:992px) {
+            .column {
+                width: 50%;
+
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+        <div class="row"></div>
+    <div class="column" style="background-color: #aaaa;">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque labore quisquam, tenetur in quas vitae inventore voluptatibus modi eum corporis a omnis enim nam rerum. Modi aut sapiente pariatur!</h2>
+    </div>
+    <div class="column" style="background-color: #aaaa;">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque labore quisquam, tenetur in quas vitae inventore voluptatibus modi eum corporis a omnis enim nam rerum. Modi aut sapiente pariatur!</h2>
+    </div>
+    <div class="column" style="background-color: #aaaa;">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque labore quisquam, tenetur in quas vitae inventore voluptatibus modi eum corporis a omnis enim nam rerum. Modi aut sapiente pariatur!</h2>
+    </div>
+    <div class="column" style="background-color: #aaaa;">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque labore quisquam, tenetur in quas vitae inventore voluptatibus modi eum corporis a omnis enim nam rerum. Modi aut sapiente pariatur!</h2>
+    </div>
+         </div>
+
+
+</body>
+</html>
